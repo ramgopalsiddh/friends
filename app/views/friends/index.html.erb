@@ -1,5 +1,5 @@
 <div id="friends">  
-<p style="color: green"><%= notice %></p>
+<p style="color: red"><%= notice %></p>
 
 <h1>Friends list</h1>
 <table class ="table" >
@@ -22,15 +22,16 @@
     <td><%= friend.email %></td>
     <td><%= friend.phone %></td>
     <td><%= friend.twitter %></td>
-    <td> <%= link_to "Show this friend", friend %></td>
+    <td>
+    <button type="button" class="btn btn-dark">
+     <%= link_to "Show this friend", friend %>
+     </button>
+     </td>
     </tr>
   <% end %>
 </tbody>
 </table>
 </div>
-<div id="friends"> 
-  <% @friends.each do |friend| %>
-  <%= render friend %> 
-  <% end %>
-</div>
+<button type="button" class="btn btn-dark">
 <%= link_to "New friend", new_friend_path %>
+</button>
