@@ -1,0 +1,36 @@
+<div id="friends">  
+<p style="color: green"><%= notice %></p>
+
+<h1>Friends list</h1>
+<table class ="table" >
+<thead>
+   <tr>
+      <th>first name </th>
+      <th>last name </th>
+      <th>Email </th>
+      <th>phone </th>
+      <th>twitter </th>
+      <th colspan ="3" > </th>
+   </tr>
+</thead>
+
+<tbody>
+  <% @friends.each do |friend| %>
+    <tr>
+    <td><%= friend.first_name %></td>
+    <td><%= friend.last_name %></td>
+    <td><%= friend.email %></td>
+    <td><%= friend.phone %></td>
+    <td><%= friend.twitter %></td>
+    <td> <%= link_to "Show this friend", friend %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+</div>
+<div id="friends"> 
+  <% @friends.each do |friend| %>
+  <%= render friend %> 
+  <% end %>
+</div>
+<%= link_to "New friend", new_friend_path %>
