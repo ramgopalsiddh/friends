@@ -11,4 +11,4 @@ Things you may want to cover:
 
 * For Use This Web App Follow These Steps
 
-! [Homepage image](/photos/create_accunt_page.png)
+! [Homepage image](./photos/create_accunt_page.png)
