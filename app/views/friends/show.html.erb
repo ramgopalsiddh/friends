@@ -2,10 +2,10 @@
 
 <%= render @friend %>
 <div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-dark" %> |
-  <%= link_to "Back to friends", friends_path, class:"btn btn-dark"  %>
+  <%= link_to "EDIT", edit_friend_path(@friend), class:"btn btn-dark" %> |
+  <%= link_to "BACK", friends_path, class:"btn btn-dark"  %>
   </div>
   <div>
   <br>
-  <%= button_to "Destroy this friend", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:"btn btn-danger" %>
+  <%= button_to "DELETE", @friend, form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class:"btn btn-danger" %>
 </div>
