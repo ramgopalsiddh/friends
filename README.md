@@ -9,6 +9,6 @@ Things you may want to cover:
 
 * rails version -- Rails 7.0.3.1
 
-* How Use This Web App
+* For Use This Web App Follow These Steps
 
-! [Homepage image](./photos/create_accunt_page.png)
+! [Homepage image](/photos/create_accunt_page.png)
